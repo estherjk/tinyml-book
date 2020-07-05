@@ -2,20 +2,34 @@
 
 Development environment & modified samples from the [TinyML Book](https://tinymlbook.com/).
 
-## Host Requirements
+## Project Structure
+
+```bash
+.
+├── arduino     # Arduino sketches
+└── notebooks   # Jupyter notebooks for training & building ML models
+```
+
+## Arduino
+
+The device used for this project is the [Arduino Nano 33 BLE Sense](https://store.arduino.cc/usa/nano-33-ble-sense).
+
+## Notebooks
+
+### Host Requirements
 
 * Linux (tested on Ubuntu 20.04)
 * NVIDIA GPU
 
-## Docker Usage
+### Docker Usage
 
-### Build
+#### Build
 
 ```bash
 docker build -t tinyml-tf:latest .
 ```
 
-### Run
+#### Run
 
 ```bash
 docker run --gpus all \
