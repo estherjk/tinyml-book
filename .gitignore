@@ -142,3 +142,6 @@ dataset/
 logs/
 train/
 tensorflow/
+
+# macOS
+.DS_Store
